@@ -66,10 +66,10 @@
       width: 100%;
       max-width: var(--max-width);
       margin: 0 auto 1.5rem;
-      padding: 0.75rem 1.2rem;
-      border-radius: 999px;
+      padding: 0.6rem 1.2rem;
+      border-radius: 22px;
       background: linear-gradient(to right, #020617, #0b1120);
-      box-shadow: 0 22px 50px rgba(15,23,42,0.8);
+      box-shadow: 0 18px 38px rgba(15,23,42,0.7);
       display: grid;
       grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
       gap: 1rem;
@@ -132,19 +132,29 @@
     }
 
     .header-phone-number {
-      font-size: 1.25rem;
+      font-size: 1.15rem;
       font-weight: 800;
       margin-top: 0.15rem;
       line-height: 1.1;
     }
 
+    /* make phone more horizontal, no pill */
     .header-phone-number span {
       display: inline-block;
-      padding: 0.25rem 0.75rem;
-      border-radius: 999px;
-      background: radial-gradient(circle at top left, #22c55e, #0ea5e9 60%, #0b1120 100%);
-      color: #e5f2ff;
-      box-shadow: 0 0 0 2px rgba(15,23,42,0.55);
+      padding: 0;
+      border-radius: 0;
+      background: none;
+      color: #e5e7eb;
+      box-shadow: none;
+    }
+
+    .header-phone-number a {
+      color: #e5e7eb;
+      text-decoration: none;
+    }
+
+    .header-phone-number a:hover {
+      text-decoration: underline;
     }
 
     .header-phone-sub {
@@ -175,6 +185,51 @@
       box-shadow: var(--shadow-soft);
       position: relative;
       overflow: hidden;
+    }
+
+    .one-day-banner {
+      background: #ffffff;
+      border-radius: 20px;
+      padding: 0.9rem 1.1rem;
+      margin-bottom: 1rem;
+      box-shadow: 0 16px 38px rgba(15,23,42,0.18);
+      border: 1px solid rgba(209,213,219,0.9);
+    }
+
+    .one-day-main {
+      font-size: 1.2rem;
+      font-weight: 800;
+      color: #020617;
+      margin-bottom: 0.25rem;
+    }
+
+    .one-day-sub {
+      font-size: 0.9rem;
+      color: #4b5563;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .one-day-sub span.emphasis {
+      font-weight: 600;
+    }
+
+    .one-day-sub button {
+      border-radius: 999px;
+      padding: 0.55rem 1.35rem;
+      border: none;
+      background: #020617;
+      color: #f9fafb;
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .one-day-sub button:hover {
+      opacity: 0.9;
     }
 
     .hero-pill {
@@ -408,6 +463,13 @@
       border: 1px solid rgba(148,163,184,0.7);
       background: #f9fafb;
       white-space: nowrap;
+    }
+
+    .trust-pill.bbb {
+      color: #1d4ed8;
+      border-color: #bfdbfe;
+      background: #eff6ff;
+      font-weight: 600;
     }
 
     /* sections */
@@ -1071,6 +1133,9 @@
     ]
   }
   </script>
+
+  <!-- EmailJS CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 </head>
 <body>
 <div class="page-wrap">
@@ -1085,7 +1150,7 @@
     <div class="header-phone-block">
       <div class="header-phone-label">Questions? Ready for pricing?</div>
       <div class="header-phone-number">
-        <span>Call 1-888-779-2284 (BATH)</span>
+        <span><a href="tel:+18887792284">Call 1-888-779-2284 (BATH)</a></span>
       </div>
       <div class="header-phone-sub">
         Talk with an <strong>Aging Safely Baths</strong> hydrotherapy walk in tub specialist.
@@ -1097,6 +1162,21 @@
     <!-- HERO -->
     <section class="hero" id="top">
       <div class="hero-left">
+        <!-- One-day installation banner -->
+        <div class="one-day-banner">
+          <div class="one-day-main">
+            Worry-free one-day walk in tub installations in many areas.
+          </div>
+          <div class="one-day-sub">
+            <span class="emphasis">
+              We coordinate everything — removal, installation, and clean-up — or ship DIY straight to your door with support.
+            </span>
+            <button type="button" onclick="openLeadForm()">
+              Start my one-day install quote
+            </button>
+          </div>
+        </div>
+
         <div class="hero-pill">
           <span class="badge">Hydrotherapy focus</span>
           Walk in tubs with air &amp; whirlpool jets
@@ -1176,6 +1256,7 @@
         <div class="trust-pill">Air &amp; whirlpool hydrotherapy options</div>
         <div class="trust-pill">Residential &amp; light commercial</div>
         <div class="trust-pill">DIY delivery or pro installation</div>
+        <div class="trust-pill bbb">A+ BBB accredited</div>
       </div>
     </section>
 
@@ -1242,10 +1323,10 @@
               Walk in tubs with jets are not medical devices, and they are not meant to diagnose, treat, cure, or prevent any disease. They are bathing fixtures that allow you to soak in warm water while jets move air or water around your body.
             </p>
             <p>
-              Research has explored how warm water and hydrotherapy may influence how people feel. For example, articles in medical and wellness literature have reported changes in perceived pain levels, relaxation, circulation, and quality of life in certain groups of people using bathing and hydrotherapy routines. 0
+              Research has explored how warm water and hydrotherapy may influence how people feel. For example, articles in medical and wellness literature have reported changes in perceived pain levels, relaxation, circulation, and quality of life in certain groups of people using bathing and hydrotherapy routines. 
             </p>
             <p>
-              One article in a journal published by the American Medical Association described underwater therapy as combining hydrotherapy, therapeutic exercise, and massage principles. 1 These types of references are useful for understanding how professionals think about water-based therapies in general. However, they are not guarantees of specific results for any individual.
+              One article in a journal published by the American Medical Association described underwater therapy as combining hydrotherapy, therapeutic exercise, and massage principles. These types of references are useful for understanding how professionals think about water-based therapies in general. However, they are not guarantees of specific results for any individual.
             </p>
             <p>
               Because everyone’s health story is unique, it is always important to talk with your own healthcare provider before changing routines, especially if you have medical conditions, circulation concerns, or skin sensitivities.
@@ -1328,7 +1409,8 @@
             <tr>
               <td>Skin and sensitivity notes</td>
               <td>
-                Air hydrotherapy may be appealing for people who bruise easily, have more delicate skin, or prefer a gentler experience. (Always confirm with your clinician.)</td>
+                Air hydrotherapy may be appealing for people who bruise easily, have more delicate skin, or prefer a gentler experience. (Always confirm with your clinician.)
+              </td>
               <td>
                 Whirlpool jets are usually not as gentle as air alone. People with very sensitive skin, open areas, or certain conditions should ask their medical provider what is appropriate for them.
               </td>
@@ -1367,7 +1449,7 @@
 
           <div class="shadow-box">
             <p style="margin-top:0;">
-              The International Association of Plumbing and Mechanical Officials (IAPMO) is a long-standing organization involved in plumbing and mechanical codes, standards, and product certification. Their work supports building professionals and inspectors who want to see products tested against recognized criteria. 2
+              The International Association of Plumbing and Mechanical Officials (IAPMO) is a long-standing organization involved in plumbing and mechanical codes, standards, and product certification. Their work supports building professionals and inspectors who want to see products tested against recognized criteria.
             </p>
             <p>
               When a walk in tub or component carries an IAPMO-related listing or mark, it indicates that the product has been evaluated based on specific standards. It does not mean a tub is “perfect” for every situation, but it gives you another level of quality control to look for when comparing different brands and models.
@@ -1610,13 +1692,9 @@
           </p>
           <div class="modal-grid">
             <form id="leadForm" class="lead-form">
-              <div>
-                <label for="firstName">First name*</label>
-                <input id="firstName" name="firstName" type="text" autocomplete="given-name" required>
-              </div>
-              <div>
-                <label for="lastName">Last name*</label>
-                <input id="lastName" name="lastName" type="text" autocomplete="family-name" required>
+              <div class="lead-form-full">
+                <label for="name">Full name*</label>
+                <input id="name" name="name" type="text" autocomplete="name" required>
               </div>
               <div>
                 <label for="email">Email*</label>
@@ -1673,9 +1751,13 @@
                 </select>
               </div>
               <div class="lead-form-full">
-                <label for="notes">Tell us about your bathroom and goals</label>
-                <textarea id="notes" name="notes" placeholder="Example: We want a walk in tub with air jets for my dad who has trouble stepping into the old tub. The bathroom is small, and we might want a tub-shower combo."></textarea>
+                <label for="message">Tell us about your bathroom and goals</label>
+                <textarea id="message" name="message" placeholder="Example: We want a walk in tub with air jets for my dad who has trouble stepping into the old tub. The bathroom is small, and we might want a tub-shower combo."></textarea>
               </div>
+
+              <!-- hidden source site for EmailJS template -->
+              <input type="hidden" id="source_site" name="source_site" value="WalkInTubsWithJets.com">
+
               <div class="lead-form-full">
                 <button type="submit">Submit my walk in tub with jets request</button>
               </div>
@@ -1708,8 +1790,15 @@
       </div>
     </div>
 
-    <!-- JS FOR MODAL -->
+    <!-- JS FOR MODAL + EMAILJS -->
     <script>
+      // Initialize EmailJS with your public key
+      (function() {
+        if (window.emailjs) {
+          emailjs.init('alWutsHLG6c3h9P2j');
+        }
+      })();
+
       function openLeadForm() {
         var modal = document.getElementById('leadFormModal');
         if (modal) {
@@ -1729,18 +1818,28 @@
           closeLeadForm();
         }
       });
+
       document.addEventListener('DOMContentLoaded', function () {
         var form = document.getElementById('leadForm');
-        if (!form) return;
+        if (!form || !window.emailjs) return;
+
         form.addEventListener('submit', function (e) {
           e.preventDefault();
-          // Connect this to EmailJS or your preferred service.
-          // Example (pseudocode):
-          // emailjs.sendForm('service_id', 'template_id', '#leadForm')
-          //   .then(function() { alert('Thank you! We will contact you soon.'); closeLeadForm(); })
-          //   .catch(function() { alert('There was a problem sending your request. Please try again or call us.'); });
-          alert('Thank you! Your hydrotherapy walk in tub request has been recorded. An Aging Safely Baths specialist will follow up.');
-          closeLeadForm();
+
+          // Make sure source_site is set correctly
+          var sourceField = document.getElementById('source_site');
+          if (sourceField) {
+            sourceField.value = 'WalkInTubsWithJets.com';
+          }
+
+          emailjs.sendForm('service_usimtub', 'template_5n0cskt', '#leadForm')
+            .then(function () {
+              alert('Thank you! Your hydrotherapy walk in tub request has been sent. An Aging Safely Baths specialist will follow up.');
+              form.reset();
+              closeLeadForm();
+            }, function () {
+              alert('There was a problem sending your request. Please try again or call us at 1-888-779-2284.');
+            });
         });
       });
     </script>
@@ -1753,6 +1852,10 @@
           <p>
             WalkInTubsWithJets.com is an Aging Safely Baths resource dedicated to hydrotherapy walk in tubs, including air and whirlpool jet systems, walk in tub and shower combos, and planning guidance for homeowners, caregivers, and facilities.
           </p>
+          <p>
+            Questions by email? Reach us at
+            <a href="mailto:sales@agingsafelybaths.com">sales@agingsafelybaths.com</a>.
+          </p>
         </div>
         <div>
           <div class="footer-heading">Site map</div>
@@ -1762,6 +1865,7 @@
             <li><a href="#faq">Hydrotherapy walk in tub FAQ</a></li>
             <li><a href="#contact">Hydrotherapy planning form</a></li>
             <li><a href="blog/index.html">Blog</a></li>
+            <li><a href="sitemap.xml">XML sitemap</a></li>
           </ul>
         </div>
         <div>
@@ -1776,15 +1880,9 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <div>&copy; <span id="year"></span> WalkInTubsWithJets.com &amp; Aging Safely Baths. All rights reserved.</div>
+        <div>&copy; 2025–2026 WalkInTubsWithJets.com &amp; Aging Safely Baths. All rights reserved.</div>
         <div>Information on this site is general in nature and not a substitute for professional medical or construction advice. Always consult your licensed professionals.</div>
       </div>
-      <script>
-        (function () {
-          var yr = document.getElementById('year');
-          if (yr) yr.textContent = new Date().getFullYear();
-        })();
-      </script>
     </footer>
   </main>
 </div>
