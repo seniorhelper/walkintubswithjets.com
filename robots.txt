@@ -2,4 +2,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.walkintubswithjets.com/sitemap.xml
+Sitemap: https://walkintubswithjets.com/sitemap.xml
