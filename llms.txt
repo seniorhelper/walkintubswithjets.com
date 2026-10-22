@@ -1,6 +1,6 @@
 # Walk In Tubs With Jets
 
-> WalkInTubsWithJets.com is a guide to hydrotherapy jets in walk-in tubs (air jets, water/whirlpool jets, combination and microbubble systems), published by Aging Safely Baths. It uses manufacturer spec sheets, the National Electrical Code, EIA energy prices and published studies, and offers free working tools (jet chooser, operating cost calculator, amp checker, fill and drain timeline, cleaning schedule maker, bath thermometer check). Install quotes come from Aging Safely Baths, phone 1-888-779-2284 (BATH). Prices are quoted per home in writing.
+> WalkInTubsWithJets.com is a guide to hydrotherapy jets in walk-in tubs (air jets, water/whirlpool jets, combination and microbubble systems), published by Aging Safely Baths. It uses manufacturer spec sheets, the National Electrical Code, EIA energy prices and published studies, and offers free working tools (therapy package builder, warm-bath timeline, jet chooser, operating cost calculator, amp checker, fill and drain timeline, cleaning schedule maker, bath thermometer check). Install quotes come from Aging Safely Baths, phone 1-888-779-2284 (BATH). Prices are quoted per home in writing.
 
 ## Pages
 
@@ -8,11 +8,13 @@
 - [Air jets vs water jets](https://walkintubswithjets.com/air-vs-water-jets/): How each system works, a 6-question jet chooser, side-by-side table from spec sheets, where microbubble fits.
 - [Operating cost calculator](https://walkintubswithjets.com/walk-in-tub-operating-cost/): Cost per bath, month and year. Default 18.31 cents/kWh (EIA, U.S. residential average, July 2026). Worked example with Ella Deluxe watts and a 60-gallon fill: about $1.41 a bath, 93% of it hot water.
 - [Electrical requirements](https://walkintubswithjets.com/walk-in-tub-electrical-requirements/): NEC 680.70, 680.71 (individual branch circuit, readily accessible GFCI), 680.73, 680.74, 210.8(A) and 430.22 in plain words; amp checker with Ella model presets; electrician checklist.
-- [Fill and drain time](https://walkintubswithjets.com/walk-in-tub-fill-and-drain-time/): Bucket test and seated bath timeline. 60 gallons fills in about 3.3 minutes at 18 GPM (Ella fast-fill rating at 60 psi) or 8.5 minutes at 7 GPM; standard drains take about 6 to 15 minutes.
+- [Fill and drain time](https://walkintubswithjets.com/walk-in-tub-fill-and-drain-time/): Bucket test and seated bath timeline. 60 gallons fills in about 3.3 minutes at 18 GPM (Ella fast-fill rating at 60 psi) or 8.5 minutes at 7 GPM; a standard drain typically takes up to about 7 minutes (US Patent 8,549,678), longer with a slow house drain.
 - [How to clean walk-in tub jets](https://walkintubswithjets.com/how-to-clean-walk-in-tub-jets/): Water-jet flush steps, manufacturer manual requirements (monthly flush, pump inlet cover, acrylic-safe cleaners), air-jet care, schedule maker, troubleshooting.
 - [Jetted walk-in tubs and arthritis](https://walkintubswithjets.com/jetted-walk-in-tub-arthritis/): 92 to 100 F (Arthritis Foundation), thermometer check, matching jets to sore areas, controls for stiff hands, first-week routine.
 - [Who should not use jets](https://walkintubswithjets.com/who-should-not-use-jetted-tub/): Heart disease, blood pressure drops on standing, diabetic neuropathy, sedating medicines and alcohol, wounds and skin infections, pregnancy, supervision needs. Sources: Ella's owner's manual, CPSC, NIDDK, NIA, MedlinePlus and published studies. Temperature guide: 92-100 F comfort, 100.4 F Ella caution, 104 F CPSC maximum.
 - [Hydrotherapy research](https://walkintubswithjets.com/hydrotherapy-research/): Rated summaries of Cochrane reviews (aquatic exercise for osteoarthritis, balneotherapy for rheumatoid arthritis and venous insufficiency), a sleep meta-analysis, heat therapy trials, a Japanese bathing cohort, and the lack of trials on home tub jets or microbubbles.
+- [Therapy options builder](https://walkintubswithjets.com/walk-in-tub-therapy-options/): Water jets (1,000 W, 7 A per pump), air jets (500 W, 4.5 A), microbubble (875 W, 7.3 A), inline heater (650 W, 5.5 A), heated seat and backrest (96 W max, 30-minute timer), chromotherapy LED (0.5 A) and ozone (0.04 A) from Ella's Bubbles sheets; cost per use at 18.31 cents/kWh; interactive package builder with amps, circuits, cost and VA HISA note.
+- [Heated seat and inline heater: staying warm](https://walkintubswithjets.com/walk-in-tub-heated-seat-inline-heater/): Why bathers get cold during fill and drain; Ella surface heater (on 5-10 minutes early, 30-minute timer, 96 W); a 650 W inline heater adds at most about 4.4 F per hour to 60 gallons (EIA Btu definition, USGS 8.34 lb/gal), so it keeps warm water warm but cannot reheat; NIA 68 F room minimum; warm-bath timeline tool.
 - [Free quote](https://walkintubswithjets.com/free-quote/): Quote request form, what happens next, what to have ready, brands offered.
 
 ## Key facts
@@ -28,4 +30,6 @@
 - Ella's Bubbles Escape and Companion spec sheets: https://cdn.shopify.com/s/files/1/0686/3156/0499/files/escape.pdf and https://cdn.shopify.com/s/files/1/0686/3156/0499/files/companion.pdf
 - VA HISA limits: https://www.prosthetics.va.gov/psas/HISA2.asp
 - Arthritis Foundation, heat therapy: https://www.arthritis.org/health-wellness/healthy-living/managing-pain/pain-relief-solutions/heat-therapy-helps-relax-stiff-joints
+- National Institute on Aging, cold weather safety: https://www.nia.nih.gov/health/safety/cold-weather-safety-older-adults
+- EIA, British thermal units: https://www.eia.gov/energyexplained/units-and-calculators/british-thermal-units.php
 - NIDDK, diabetes and foot problems: https://www.niddk.nih.gov/health-information/diabetes/overview/preventing-problems/foot-problems

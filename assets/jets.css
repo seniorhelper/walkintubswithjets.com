@@ -240,3 +240,21 @@ footer a:hover{color:#fbbf24}
 .gallery figure{margin:0;background:#fff;border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
 .gallery img{width:100%;aspect-ratio:4/3;object-fit:cover}
 .gallery figcaption{padding:.7rem .9rem;font-size:.92rem;color:var(--mid)}
+/* 2026-10-22 older-reader sizing: no body copy under ~16px (1rem = 18px) */
+.src{font-size:.95rem}
+.updated,.crumbs{font-size:.95rem}
+.stat span,.related a span,.kv span,.form-priv{font-size:.92rem}
+.f small{font-size:.9rem}
+.tbl table{font-size:1rem}
+.tbl th{font-size:.92rem}
+.chart figcaption,.gallery figcaption{font-size:.95rem}
+.formula{font-size:.95rem}
+.ft-brand p{font-size:.95rem}
+footer a{font-size:.95rem}
+.ft-bottom{font-size:.9rem}
+.kicker{font-size:.85rem}
+.ev{font-size:.82rem}
+.hdr-phone small{font-size:.78rem}
+@media (min-width:901px){.gnav a{font-size:.84rem;padding:.7rem .3rem}.gnav ul{gap:.1rem .1rem}}
+.ev-none{background:#f1f1f1;color:#3a3a3a}
+.opt-cost{color:var(--mid);font-weight:600;white-space:nowrap}
