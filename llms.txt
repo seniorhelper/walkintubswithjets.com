@@ -16,6 +16,7 @@
 - [Therapy options builder](https://walkintubswithjets.com/walk-in-tub-therapy-options/): Water jets (1,000 W, 7 A per pump), air jets (500 W, 4.5 A), microbubble (875 W, 7.3 A), inline heater (650 W, 5.5 A), heated seat and backrest (96 W max, 30-minute timer), chromotherapy LED (0.5 A) and ozone (0.04 A) from Ella's Bubbles sheets; cost per use at 18.31 cents/kWh; interactive package builder with amps, circuits, cost and VA HISA note.
 - [Heated seat and inline heater: staying warm](https://walkintubswithjets.com/walk-in-tub-heated-seat-inline-heater/): Why bathers get cold during fill and drain; Ella surface heater (on 5-10 minutes early, 30-minute timer, 96 W); a 650 W inline heater adds at most about 4.4 F per hour to 60 gallons (EIA Btu definition, USGS 8.34 lb/gal), so it keeps warm water warm but cannot reheat; NIA 68 F room minimum; warm-bath timeline tool.
 - [Free quote](https://walkintubswithjets.com/free-quote/): Quote request form, what happens next, what to have ready, brands offered.
+- [Privacy Policy](https://walkintubswithjets.com/privacy/): How this site handles quote requests, calls and texts, analytics and your choices.
 
 ## Key facts
 
